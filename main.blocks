@@ -1,0 +1,51 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="fdfY1#(fObATi_I*6PB3">Player</variable><variable type="KIND_SpriteKind" id="A|r}:T7*KEUpYePF{L+[">Projectile</variable><variable type="KIND_SpriteKind" id="JRQ+qlz-ceEYY0u2q@a=">Food</variable><variable type="KIND_SpriteKind" id="=4h!C[2XR03nktl/[GGD">Enemy</variable><variable id="MV1Cr~olpM=q`3@tkTRk">mySprite</variable><variable id="(GaOmZms=3M$ZtqwPTe9">randomSprite</variable><variable id="+:aO}~ifa8Av4w3ps_Jv">rocky</variable></variables><block type="pxt-on-start" x="20" y="0"><statement name="HANDLER"><block type="variables_set"><field name="VAR" id="(GaOmZms=3M$ZtqwPTe9">randomSprite</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . f . . . . . . . . . 
+. . . . . f f f f f . . . . . . 
+. . . . f 2 2 2 2 2 f . . . . . 
+. . . . f 2 2 2 2 2 2 f f . . . 
+. . . f f 1 1 1 1 1 1 1 1 f . . 
+. . . f 1 1 2 1 1 1 2 1 1 1 f . 
+. . . f 1 1 1 1 1 1 1 1 1 1 f . 
+. . f f 1 1 1 1 2 2 1 1 1 1 f . 
+. . . f 2 1 1 1 2 2 1 1 2 2 f . 
+. . . f 2 2 2 1 1 1 1 2 2 1 f . 
+. . . f 1 1 2 2 2 2 2 2 1 1 f . 
+. . . . f 1 1 1 1 1 1 1 f f . . 
+. . . . . f f f f f f f . . . . 
+. . . . . . . . 5 . . . . . . . 
+. . . . . 5 5 5 5 5 5 5 . . . . 
+. . . . . . . 5 . 5 . . . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="spritesetpos"><value name="sprite"><block type="variables_get"><field name="VAR" id="(GaOmZms=3M$ZtqwPTe9">randomSprite</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">51</field></shadow></value><value name="y"><shadow type="positionPicker"><field name="index">95</field></shadow></value><next><block type="variables_set"><field name="VAR" id="+:aO}~ifa8Av4w3ps_Jv">rocky</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . d d d d d d d . . . . . . . . . . . 
+. . . . . . . . . . . . d d d d d d d d d d d d . . . . . . . . 
+. . . . . . . . . . . d d d f d d d d d d d f d d . . . . . . . 
+. . . . . . . . . . d d d d f f f d d d f f f d d d . . . . . . 
+. . . . . . . . . . d d d d d d d d d d d d d d d d . . . . . . 
+. . . . . . . . . . d d d d d d f d d d d f d d d d d . . . . . 
+. . . . . . . . . . d d d d d d d d d d d d d d d d d . . . . . 
+. . . . . . . . . . . d d d d d f f f f f d d d d d d . . . . . 
+. . . . . . . . . . . d d d d f d d d d d f d d d d d . . . . . 
+. . . . . . . . . . . . d d d d d d d d d d d d d d . . . . . . 
+. . . . . . . . . . . . . d d d f f f f f d d d d . . . . . . . 
+. . . . . . . . . . . . . . d d d d d d d d d d d . . . . . . . 
+. . . . . . . . . . . . . . . . d d d d . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . d d d . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . d d d d . . . . . . . . . . . . 
+. . . . . . . . . . . . . . d d d d d d d f d d . . . . . . . . 
+. . . . . . . . . . . d f f d d d d d f f d d f d . . . . . . . 
+. . . . . . . . . . d d d f d d d d d f f f f d d d . . . . . . 
+. . . . . . . . . . d . . d d d d d d d f d d f d f d . . . . . 
+. . . . . . . . . . . . . d d d d d d f f f d d . d d . . . . . 
+. . . . . . . . . . . . . d d d d d d d f d d d . . d . . . . . 
+. . . . . . . . . . . . . d d d d d d d d d d d . . . . . . . . 
+. . . . . . . . . . . . . f f f f f f f f f f . . . . . . . . . 
+. . . . . . . . . . . . . d d f 1 1 1 1 f d . . . . . . . . . . 
+. . . . . . . . . . . . . d d f f f f f d d . . . . . . . . . . 
+. . . . . . . . . . . . . f . . . . . . . f . . . . . . . . . . 
+. . . . . . . . . . . . d d . . . . . . . d d . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="gameSplash"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="title"><shadow type="text"><field name="TEXT">This is my rocky game</field></shadow></value></block></next></block></next></block></next></block></statement></block><block type="keyonevent" x="20" y="320"><field name="button">controller.anyButton</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="spritesetpos"><value name="sprite"><block type="variables_get"><field name="VAR" id="+:aO}~ifa8Av4w3ps_Jv">rocky</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">0</field></shadow><block type="device_random"><value name="min"><shadow type="math_number"><field name="NUM">0</field></shadow></value><value name="limit"><shadow type="math_number"><field name="NUM">160</field></shadow></value></block></value><value name="y"><shadow type="positionPicker"><field name="index">0</field></shadow><block type="device_random"><value name="min"><shadow type="math_number"><field name="NUM">0</field></shadow></value><value name="limit"><shadow type="math_number"><field name="NUM">120</field></shadow></value></block></value><next><block type="spritesetpos"><value name="sprite"><block type="variables_get"><field name="VAR" id="(GaOmZms=3M$ZtqwPTe9">randomSprite</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">0</field></shadow><block type="device_random"><value name="min"><shadow type="math_number"><field name="NUM">0</field></shadow></value><value name="limit"><shadow type="math_number"><field name="NUM">160</field></shadow></value></block></value><value name="y"><shadow type="positionPicker"><field name="index">0</field></shadow><block type="device_random"><value name="min"><shadow type="math_number"><field name="NUM">0</field></shadow></value><value name="limit"><shadow type="math_number"><field name="NUM">120</field></shadow></value></block></value></block></next></block></statement></block></xml>
